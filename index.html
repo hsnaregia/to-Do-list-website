@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-iii</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital@1&family=Oswald:wght@300&family=Roboto+Slab:wght@300&family=Ubuntu&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-right">
+        <img src="src/icons8-todo-list-100.png" alt="" />
+        <h2>your web handheld to do list</h2>
+      </div>
+      <div class="night-mode">
+        <!-- here goes the dark mode button  -->
+        <button id="toggle" style="color:#34495e ;">dark/light</button>
+      </div>
+    </nav>
+    <!-- -------- -->
+    <div class="content">
+      <!-- here is the bottom of the page contents  -->
+      <div class="cont-left" id="left-design">
+        <div class="unblured-login-part">
+          <h2>Login</h2>
+          <form>
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <p>------------------------------or------------------------------</p>
+          <div class="or-part">
+            <a href="#">forget password</a>
+            <a href="#">make a new user account</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cont-right">
+       <!-- this is the left part of the page  -->
+
+        <div class="cont-right-up">
+          <img src="src/icons8-todo-list-64.png" alt="logo of website">
+          <div><h2>simple to do list website</h2></div>
+        </div>
+
+
+        <div class="cont-right-down">
+          <p>Introducing To-Do-III, your ultimate task management solution. Simplify your daily routine and boost productivity effortlessly with our intuitive interface.
+
+            Organize tasks efficiently with customizable lists and priority settings. Set reminders and deadlines to stay on track and never miss an important task.
+            
+            Collaborate seamlessly with team members by sharing lists and assigning tasks in real-time. Stay connected and achieve goals together.
+            
+            Access your to-do lists from anywhere, anytime, with our responsive web application. Stay productive whether you're at home, in the office, or on the go.
+            
+            Experience the power of To-Do-III and take control of your tasks today. Sign up now and elevate your productivity to new heights.</p>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

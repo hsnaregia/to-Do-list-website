@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #34495e;
+  --element-color: #5dade2;
+  --border-color: #d5dbdb;
+}
+.dark-theme {
+  --bg-color: #070f2b;
+  --element-color: #1b1a55;
+  --text-color: #535c91;
+  --border-color: #f5f5f5;
+}
+
+body {
+  width: 92vw;
+  height: 94vh;
+  background-color: var(--bg-color);
+  display: flex;
+  margin: 2vh 3vw;
+  flex-direction: column;
+}
+.navbar {
+  background-color: var(--element-color);
+  padding: 0 4vw;
+  width: 94vw;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  direction: rtl;
+  -webkit-box-shadow: -12px 11px 52px 1px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: -12px 11px 52px 1px rgba(0, 0, 0, 0.83);
+  box-shadow: -12px 11px 52px 1px rgba(0, 0, 0, 0.83);
+}
+.navbar img {
+  width: 3vw;
+  height: 3vw;
+  background-color: transparent;
+}
+.navbar h2 {
+  font-size: large;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: "kode mono";
+}
+.nav-right {
+  width: 30%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 2vw;
+}
+
+/* ok now wanna code the parts for night mode and day mode */
+#toggle {
+  width: 5vw;
+  height: 4vh;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--element-color);
+}
+#toggle:hover {
+  background-color: gray;
+}
+
+/* now the darkmode ends and the content part comes in  */
+
+.content {
+  width: 94vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4vh 0;
+}
+
+.cont-left {
+  background-color: transparent;
+  width: 30vw;
+  height: 80vh;
+  position: relative;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Background color with transparency */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.unblured-login-part {
+  width: 20vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.413);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.unblured-login-part h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.cont-right {
+  background-color: transparent;
+  width: 40vw;
+  height: 80vh;
+  padding: 10vh 2vw 0 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#left-design {
+  border: 1px solid var(--border-color);
+  background-color: var(--element-color);
+  border-radius: 20px;
+  -webkit-box-shadow: -12px 11px 52px 1px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: -12px 11px 52px 1px rgba(0, 0, 0, 0.83);
+  box-shadow: -12px 11px 52px 1px rgba(0, 0, 0, 0.83);
+}
+
+.cont-right-up {
+  background-color: transparent;
+  width: 30vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+}
+.cont-right-up div {
+  width: 22vw;
+  height: 7vh;
+  background-color: var(--element-color);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-right-up h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "kode mono";
+  font-weight: 800;
+  color: var(--text-color);
+}
+.cont-right-down {
+  width: 25vw;
+  height: 40vh;
+  margin: 2vh 0 0 2vw;
+}
+.cont-right-down p {
+  background-color: var(--element-color);
+  padding: 2vw 2vh;
+  width: auto;
+  height: auto;
+  color: var(--text-color);
+  list-style: circle;
+  line-height: 30px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 800;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+}
+
+.or-part {
+  width: 17vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.or-part a {
+  margin-top: 2vh;
+  padding: 1vh 0 0 0;
+  width: 17vw;
+  height: 5vh;
+  border: 2px solid;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.or-part a:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}

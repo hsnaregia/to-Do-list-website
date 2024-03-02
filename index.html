@@ -20,7 +20,7 @@
       </div>
       <div class="night-mode">
         <!-- here goes the dark mode button  -->
-        <button id="toggle" style="color:#34495e ;">dark/light</button>
+        <button id="toggle" style="color: #34495e">dark/light</button>
       </div>
     </nav>
     <!-- -------- -->
@@ -32,13 +32,19 @@
           <form>
             <div class="form-group">
               <label for="username">Username:</label>
-              <input type="text" id="username" name="username" required>
+              <input type="text" id="username" name="username" required />
             </div>
             <div class="form-group">
               <label for="password">Password:</label>
-              <input type="password" id="password" name="password" required>
+              <input type="password" id="password" name="password" required />
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">
+              <a
+                href="/dashboard/index.html"
+                style="text-decoration: none; color: #34495e"
+                >Login</a
+              >
+            </button>
           </form>
           <p>------------------------------or------------------------------</p>
           <div class="or-part">
@@ -48,30 +54,33 @@
         </div>
       </div>
 
-
       <div class="cont-right">
-       <!-- this is the left part of the page  -->
+        <!-- this is the left part of the page  -->
 
         <div class="cont-right-up">
-          <img src="src/icons8-todo-list-64.png" alt="logo of website">
+          <img src="src/icons8-todo-list-64.png" alt="logo of website" />
           <div><h2>simple to do list website</h2></div>
         </div>
 
-
         <div class="cont-right-down">
-          <p>Introducing To-Do-III, your ultimate task management solution. Simplify your daily routine and boost productivity effortlessly with our intuitive interface.
-
-            Organize tasks efficiently with customizable lists and priority settings. Set reminders and deadlines to stay on track and never miss an important task.
-            
-            Collaborate seamlessly with team members by sharing lists and assigning tasks in real-time. Stay connected and achieve goals together.
-            
-            Access your to-do lists from anywhere, anytime, with our responsive web application. Stay productive whether you're at home, in the office, or on the go.
-            
-            Experience the power of To-Do-III and take control of your tasks today. Sign up now and elevate your productivity to new heights.</p>
+          <p>
+            Introducing To-Do-III, your ultimate task management solution.
+            Simplify your daily routine and boost productivity effortlessly with
+            our intuitive interface. Organize tasks efficiently with
+            customizable lists and priority settings. Set reminders and
+            deadlines to stay on track and never miss an important task.
+            Collaborate seamlessly with team members by sharing lists and
+            assigning tasks in real-time. Stay connected and achieve goals
+            together. Access your to-do lists from anywhere, anytime, with our
+            responsive web application. Stay productive whether you're at home,
+            in the office, or on the go. Experience the power of To-Do-III and
+            take control of your tasks today. Sign up now and elevate your
+            productivity to new heights.
+          </p>
         </div>
-
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

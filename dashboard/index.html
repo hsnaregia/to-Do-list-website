@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont-left">
+        <div class="prof-section">
+          <img
+            src="/src/wp4738816-e-boys-wallpapers.jpg"
+            alt="user image"
+            class="user-img"
+          />
+          <div class="username">
+            <h3>hsnaregia</h3>
+            <p>front end dev</p>
+          </div>
+          <!-- here goes the dark mode button  -->
+          <div class="night-mode">
+            <button id="toggle" style="color: #34495e">dark/light</button>
+          </div>
+          <!-- dark mode toogle button -->
+        </div>
+        <div class="plans-section">
+            <p> my plans</p>
+            <a href="#">daily</a>
+            <a href="#">weekly</a>
+            <a href="#">plans of the month</a>
+        </div>
+      </div>
+      <div class="cont-right">
+        <div class="part">
+            <div class="cont-right-usable">
+
+            </div>
+            <div class="cont-right-usable">
+
+            </div>
+        </div>
+        <div class="part">
+            <div class="schedule">
+               <div id="todo-list">
+                    <p contenteditable="true"><input type="checkbox" class="check"> to do --</p>
+                    <!-- Existing to-do items -->
+                </div>
+                <div class="button-part">
+                <button id="add-todo-btn">Click to add task</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="/dashboard/script.js"></script>
+    <script src="/dashboard/update.js"></script>
+    <script src="/dashboard/addTodoBtn.js"></script>
+  </body>
+</html>

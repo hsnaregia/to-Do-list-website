@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #34495e;
+  --element-color: #5dade2;
+  --border-color: #d5dbdb;
+}
+.dark-theme {
+  --bg-color: #070f2b;
+  --element-color: #1b1a55;
+  --text-color: #535c91;
+  --border-color: #f5f5f5;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-color);
+}
+.cont-right {
+  width: 80%;
+  height: 100vh;
+  background-color: transparent;
+}
+.cont-left {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--element-color);
+  border-radius: 0 20px 20px 0;
+  -webkit-box-shadow: 15px 0px 29px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 0px 29px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 0px 29px -20px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+}
+.prof-section {
+  width: auto;
+  margin: 1vh 1vw;
+  height: 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.user-img {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+.username {
+  padding: 0 1vw;
+  width: 0 0 auto;
+  height: 5vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0 0 0;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.username h3 {
+  font-size: larger;
+}
+.username p {
+  font-weight: 600;
+}
+#toggle {
+  margin: 1vh 0 0 0;
+  width: 5vw;
+  height: 4vh;
+  border: 2px solid grey;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--element-color);
+}
+#toggle:hover {
+  background-color: gray;
+}
+.plans-section {
+  background-color: transparent;
+  margin: 2vh 2vw;
+  width: 1 1 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1vh 1vw;
+}
+.plans-section p {
+  width: 1 1 auto;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 700;
+  color: var(--text-color);
+  border: 2px dotted;
+  border-radius: 20px 20px 0 0;
+}
+.plans-section a {
+  width: 1 1 auto;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px outset var(--border-color);
+  font-size: large;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 20px;
+  margin: 1vh 0;
+}
+.plans-section a:hover {
+  border: 2px inset var(--border-color);
+}
+
+.cont-right {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 5vw;
+  width: 70vw;
+  height: 90vh;
+}
+
+.part {
+  background-color: transparent;
+  width: 28vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 5vw;
+}
+
+.schedule {
+  width: 30vw;
+  height: 90vh;
+  background-color: var(--element-color);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2vh 2vw;
+}
+
+.cont-right-usable {
+  width: 28vw;
+  height: 42vh;
+  margin: 2vh 0;
+  background-color: var(--element-color);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+}
+#todo-list {
+  background-color: #070f2b;
+  width: 26vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 0 0 0.5vw;
+  border: 2px solid var(--border-color);
+  border-radius: 40px 0 0 40px;
+}
+
+#todo-list p {
+  width: 22vw;
+  height: 2.5vh;
+  margin-top: 3vh;
+  padding-left: 2vw;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: large;
+  font-weight: 700;
+}
+.todo-list {
+  font-family: Arial, sans-serif;
+}
+.todo-item {
+  margin-bottom: 5px;
+}
+.check {
+  margin-right: 5px;
+}
+
+.button-part {
+  background-color: transparent;
+  width: 24vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* here is the design for the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Change thumb (the draggable scrollbar handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+/* Change track (the area on which the thumb moves) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Change scrollbar button (the arrow buttons at the ends of the scrollbar) */
+::-webkit-scrollbar-button {
+  background-color: #ccc;
+}
+
+/* Change corner (the intersection of horizontal and vertical scrollbars) */
+::-webkit-scrollbar-corner {
+  background-color: #ccc;
+}
+/* end of scrollbar */
+
+#add-todo-btn {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 10vw;
+  height: 5vh;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  font-weight: 700;
+}
+#add-todo-btn {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  transition: 1s;
+  border: 2px outset ;
+}
+#add-todo-btn::after {
+  content: "+";
+  position: absolute;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+#add-todo-btn:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  border:2px inset;
+}
+#add-todo-btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}

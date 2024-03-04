@@ -248,7 +248,7 @@ button {
   display: inline;
   position: relative;
   transition: 1s;
-  border: 2px outset ;
+  border: 2px outset;
 }
 #add-todo-btn::after {
   content: "+";
@@ -261,9 +261,62 @@ button {
 #add-todo-btn:hover {
   padding-right: 24px;
   padding-left: 8px;
-  border:2px inset;
+  border: 2px inset;
 }
 #add-todo-btn:hover:after {
   opacity: 1;
   right: 10px;
+}
+
+.cont-right-usable {
+  color: var(--text-color);
+  padding: 2vw 4vh;
+}
+.cont-right-usable h1 {
+  padding-bottom: 1vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.cont-right-usable p {
+  padding: 2vh 0 0 2vw;
+  width: 24vw;
+  height: 30vh;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  font-size: large;
+  font-weight: 700;
+  overflow: hidden;
+}
+.pomodoro {
+  width: 24vw;
+  height: 30vh;
+  background-color: #d5dbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  text-align: center;
+}
+.time-left{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+button{
+  padding:10px 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: translateY(1px);
 }
